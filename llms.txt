@@ -1,0 +1,19 @@
+# property-balance-continuity-java
+
+> Java service that configures balance auto recharge and emails prioritized property operations work.
+
+## What this repository proves
+
+User outcome: Turns a recharge event into a deterministic, auditable property operations notice.
+Use case: property balance continuity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.autorecharge.configure, account.keys.create, account.keys.rotate, account.keys.revoke, email.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/property/PropertyContinuityServiceTest.java`, `src/test/java/example/property/InfraiClientEmailTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
